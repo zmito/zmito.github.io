@@ -7,30 +7,32 @@ tags: git密钥
 
 ---
 
-# 密钥的生成  指定密钥名
+密钥的生成  指定密钥名
+---------------------
 
 ```bash
 
 ssh-keygen -t rsa -C email@email.com -f ~/.ssh/gitee
 
 ```
-### 修改或新建 .ssh/config  文件
+修改或新建 .ssh/config  文件
+---------------------------
+
 ```
 Host gitee.com
     IdentityFile ~/.ssh/gitee  ##指定密钥文件
 
 ```
-### gitee.com 用户设置中添加 ssh 公钥:  ~/.ssh/gitee.pub 内容
-
-### 测试链接
-
+gitee.com 用户设置中添加 ssh 公钥:  ~/.ssh/gitee.pub 内容
+--------------------------------------------------------
+测试链接
+--------
 ``` 
 ssh -T git@gitee.com
 
 ```
-
-### 一个项目推送到多个远程仓库
-
+ 一个项目推送到多个远程仓库
+-------------------------
 ```bash
 
 git remote add gitee git@gitee.com  ## 添加要推送到的远程仓库地址及指定别名
