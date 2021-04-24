@@ -1,14 +1,16 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   
-  <div>
-    <a href="https://github.com/zmito/zmito.github.io/edit/myblog/source/<%- page.source %>" target="_blank">修改</a>
-  </div>
   <header>
     <%- partial('_partial/post/title', { post: page, index: false, class_name: 'posttitle' }) %>
     <div class="meta">
       <%- partial('_partial/post/date', { post: page, class_name: 'postdate' }) %>
       <%- partial('_partial/post/category') %>
       <%- partial('_partial/post/tag') %>
+      <br>
+      <br>
+      <div>
+        <a href="https://github.com/zmito/zmito.github.io/edit/myblog/source/<%- page.source %>" target="_blank">修改</a>
+      </div>
     </div>
   </header>
   <%- partial('_partial/post/gallery') %>
