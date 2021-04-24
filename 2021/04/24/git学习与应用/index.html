@@ -14,7 +14,7 @@
 <meta property="og:description" content="密钥的生成  指定密钥名123ssh-keygen -t rsa -C email@email.com -f ~&#x2F;.ssh&#x2F;gitee 修改或新建 .ssh&#x2F;config  文件123Host gitee.com    IdentityFile ~&#x2F;.ssh&#x2F;gitee  ##指定密钥文件 gitee.com 用户设置中添加 ssh 公钥:  ~&#x2F;.ssh&#x2F;gitee.pub">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-04-24T20:36:34.000Z">
-<meta property="article:modified_time" content="2021-04-24T16:22:41.933Z">
+<meta property="article:modified_time" content="2021-04-24T16:28:34.027Z">
 <meta property="article:author" content="zmito">
 <meta property="article:tag" content="git密钥">
 <meta name="twitter:card" content="summary">
@@ -155,55 +155,6 @@
 <h2 id="修改或新建-ssh-config-文件"><a href="#修改或新建-ssh-config-文件" class="headerlink" title="修改或新建 .ssh/config  文件"></a>修改或新建 .ssh/config  文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Host gitee.com</span><br><span class="line">    IdentityFile ~&#x2F;.ssh&#x2F;gitee  ##指定密钥文件</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <h2 id="gitee-com-用户设置中添加-ssh-公钥-ssh-gitee-pub-内容"><a href="#gitee-com-用户设置中添加-ssh-公钥-ssh-gitee-pub-内容" class="headerlink" title="gitee.com 用户设置中添加 ssh 公钥:  ~/.ssh/gitee.pub 内容"></a>gitee.com 用户设置中添加 ssh 公钥:  ~/.ssh/gitee.pub 内容</h2><h2 id="测试链接"><a href="#测试链接" class="headerlink" title="测试链接"></a>测试链接</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@gitee.com</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <h2 id="一个项目推送到多个远程仓库"><a href="#一个项目推送到多个远程仓库" class="headerlink" title=" 一个项目推送到多个远程仓库"></a> 一个项目推送到多个远程仓库</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">git remote add gitee git@gitee.com  <span class="comment">## 添加要推送到的远程仓库地址及指定别名</span></span><br><span class="line"></span><br><span class="line">git push -u gitee master            <span class="comment">## 推送到指定别名的远程对应的分支</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   </div>
 </article>
