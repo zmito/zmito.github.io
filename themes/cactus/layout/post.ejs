@@ -5,6 +5,9 @@
       <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
         <span itemprop="name"><% if (page.author) { %><%- page.author %><% } else { %><%- config.author %><% } %></span>
       </span>
+      <div>
+        <a href="https://github.com/zmito/zmito.github.io/edit/myblog/source/<%- page.source %>" target="_blank">修改</a>
+      </div>
       <%- partial('_partial/post/date', { post: page, class_name: 'postdate' }) %>
       <%- partial('_partial/post/category') %>
       <%- partial('_partial/post/tag') %>
@@ -13,9 +16,6 @@
   <%- partial('_partial/post/gallery') %>
   <div class="content" itemprop="articleBody">
     <%- page.content %>
-  </div>
-  <div>
-    <a href="https://github.com/zmito/zmito.github.io/edit/myblog/source/<%- page.source %>" target="_blank">修改</a>
   </div>
 </article>
 <%- partial('_partial/comments') %>
