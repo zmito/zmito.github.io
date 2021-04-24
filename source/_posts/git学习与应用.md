@@ -15,12 +15,12 @@ ssh-keygen -t rsa -C email@email.com -f ~/.ssh/gitee
 
 ```
 ### 修改或新建 .ssh/config  文件
-
 ```
 Host gitee.com
     IdentityFile ~/.ssh/gitee  ##指定密钥文件
 
 ```
+### gitee.com 用户设置中添加 ssh 公钥:  ~/.ssh/gitee.pub 内容
 
 ### 测试链接
 
