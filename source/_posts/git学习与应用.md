@@ -1,32 +1,35 @@
 ---
 title: git学习与应用
+
 date: 2021-04-24 20:36:34
-tags:
+
+tags: git密钥
+
 ---
 
-> ### 密钥的生成  指定密钥名
+## 密钥的生成  指定密钥名
 
 ```bash
 
 ssh-keygen -t rsa -C email@email.com -f ~/.ssh/gitee
 
 ```
-> > 修改或新建 .ssh/config  文件
+### 修改或新建 .ssh/config  文件
 
 ```
 Host gitee.com
-    IdentityFile ~/.ssh/gitee  ##指定
+    IdentityFile ~/.ssh/gitee  ##指定密钥文件
 
 ```
 
-> > 测试链接
+### 测试链接
 
 ``` 
 ssh -T git@gitee.com
 
 ```
 
-> ### 一个项目推送到多个远程仓库
+### 一个项目推送到多个远程仓库
 
 ```bash
 
